@@ -12,7 +12,7 @@
 - 因為開發環境選擇的因素所以先調整回JDK1.8
 
 ### Demo 
-- 因為免費的Heroku 方案在30 分鐘內沒有動作將會休眠，每月至多醒550 小時。我們利用[Uptimerobot](https://uptimerobot.com/) 監控喚醒
+- 因為免費的Heroku 方案在30 分鐘內沒有動作將會休眠，每月至多醒550 小時。可以利用[Uptimerobot](https://uptimerobot.com/) 監控喚醒
 - [Demo URL -> https://demo-halo-01.herokuapp.com](https://demo-halo-01.herokuapp.com)
 
 ### 技術選型(後端)
