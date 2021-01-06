@@ -28,12 +28,10 @@ public class Journal extends BaseEntity {
     @GenericGenerator(name = "custom-id", strategy = "run.halo.app.model.entity.support.CustomIdGenerator")
     private Integer id;
 
-    @Column(name = "source_content", nullable = false)
-    @Lob
+    @Column(name = "source_content", nullable = true)
     private String sourceContent;
 
-    @Column(name = "content", nullable = false)
-    @Lob
+    @Column(name = "content", nullable = true)
     private String content;
 
     @Column(name = "likes")

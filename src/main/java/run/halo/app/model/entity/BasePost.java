@@ -36,7 +36,7 @@ public class BasePost extends BaseEntity {
     /**
      * Post title.
      */
-    @Column(name = "title", nullable = false)
+    @Column(name = "title", nullable = false, columnDefinition = "TEXT")
     private String title;
 
     /**
@@ -50,13 +50,13 @@ public class BasePost extends BaseEntity {
      * Post url.
      */
     @Deprecated
-    @Column(name = "url")
+    @Column(name = "url", columnDefinition = "TEXT")
     private String url;
 
     /**
      * Post slug.
      */
-    @Column(name = "slug", unique = true)
+    @Column(name = "slug", unique = true, columnDefinition = "TEXT")
     private String slug;
 
     /**
@@ -69,28 +69,25 @@ public class BasePost extends BaseEntity {
     /**
      * Original content,not format.
      */
-    @Column(name = "original_content", nullable = false)
-    @Lob
+    @Column(name = "original_content", nullable = false, columnDefinition = "TEXT")
     private String originalContent;
 
     /**
      * Rendered content.
      */
-    @Column(name = "format_content")
-    @Lob
+    @Column(name = "format_content", columnDefinition = "TEXT")
     private String formatContent;
 
     /**
      * Post summary.
      */
-    @Column(name = "summary")
-    @Lob
+    @Column(name = "summary", columnDefinition = "TEXT")
     private String summary;
 
     /**
      * Cover thumbnail of the post.
      */
-    @Column(name = "thumbnail", length = 1023)
+    @Column(name = "thumbnail", columnDefinition = "TEXT")
     private String thumbnail;
 
     /**
@@ -104,19 +101,19 @@ public class BasePost extends BaseEntity {
      * Whether to allow comments.
      */
     @Column(name = "disallow_comment")
-    @ColumnDefault("0")
+    @ColumnDefault("false")
     private Boolean disallowComment;
 
     /**
      * Post password.
      */
-    @Column(name = "password")
+    @Column(name = "password", columnDefinition = "TEXT")
     private String password;
 
     /**
      * Custom template.
      */
-    @Column(name = "template")
+    @Column(name = "template", columnDefinition = "TEXT")
     private String template;
 
     /**
@@ -143,13 +140,13 @@ public class BasePost extends BaseEntity {
     /**
      * Meta keywords.
      */
-    @Column(name = "meta_keywords", length = 511)
+    @Column(name = "meta_keywords", columnDefinition = "TEXT")
     private String metaKeywords;
 
     /**
      * Meta description.
      */
-    @Column(name = "meta_description", length = 1023)
+    @Column(name = "meta_description", columnDefinition = "TEXT")
     private String metaDescription;
 
     /**

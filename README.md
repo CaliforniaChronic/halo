@@ -1,3 +1,30 @@
+## 測試項目 - Halo 個人部落格
+
+### 介紹說明
+- [Forked from halo-dev/halo](https://github.com/halo-dev/halo)
+- 技術選型、項目結構清楚簡潔，適合學習  
+- 具備友好完整的後台管理功能
+- 社區活躍，生態良好
+
+### 調整內容
+- 使用的數據庫調整為PostgreSQL 
+- 佈署於Heroku
+- 因為開發環境選擇的因素所以先調整回JDK1.8
+
+### demo 
+- 因為免費的Heroku 方案在30 分鐘內沒有動作將會休眠，每月至多醒550 小時。我們利用[Uptimerobot](https://uptimerobot.com/) 監控喚醒
+- [demo URL -> https://demo-halo-01.herokuapp.com](https://demo-halo-01.herokuapp.com)
+
+### 技術選型(後端)
+- Spring Boot
+- JPA-Hibernate
+- PostgreSQL
+- Lombok
+- HuTool
+- Gradle
+
+
+
 <h1 align="center"><a href="https://github.com/halo-dev" target="_blank">Halo</a></h1>
 
 > Halo 是一款现代化的个人独立博客系统，给习惯写博客的同学多一个选择。

@@ -47,7 +47,6 @@ public class Option extends BaseEntity {
      * option value
      */
     @Column(name = "option_value", nullable = false)
-    @Lob
     private String value;
 
     public Option(String key, String value) {

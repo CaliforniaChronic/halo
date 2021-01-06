@@ -12,25 +12,30 @@ spring:
     ansi:
       enabled: always
   datasource:
+    url: jdbc:postgresql://localhost:5432/demohalo
+    username: admin
+    password: 123456
+    driver-class-name: org.postgresql.Driver
     type: com.zaxxer.hikari.HikariDataSource
 
     # H2 database configuration.
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:~/.halo/db/halo
-    username: admin
-    password: 123456
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:file:~/.halo/db/halo
+#    username: admin
+#    password: 123456
 
-  h2:
-    console:
-      settings:
-        web-allow-others: false
-      path: /h2-console
-      enabled: false
+#  h2:
+#    console:
+#      settings:
+#        web-allow-others: false
+#      path: /h2-console
+#      enabled: false
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: false
     open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   flyway:
     enabled: false
   servlet:

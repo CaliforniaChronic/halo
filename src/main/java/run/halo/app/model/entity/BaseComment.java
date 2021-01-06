@@ -86,14 +86,14 @@ public class BaseComment extends BaseEntity {
      * Is admin's comment.
      */
     @Column(name = "is_admin")
-    @ColumnDefault("0")
+    @ColumnDefault("false")
     private Boolean isAdmin;
 
     /**
      * Allow notification.
      */
     @Column(name = "allow_notification")
-    @ColumnDefault("1")
+    @ColumnDefault("true")
     private Boolean allowNotification;
 
     /**
